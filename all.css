@@ -1,0 +1,227 @@
+/* .wrap{
+    width: 640px;
+    margin: 0 auto;
+}
+.content .main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.content .list{
+    display: flex;
+    flex-direction: column;
+}
+.list li{
+    display: flex;
+    margin-bottom: 24px;
+}
+.list li h2{
+    font-size:20px;
+    line-height:1.2
+}
+.list li p{
+    font-size:16px;
+    line-height:1.5;
+    width: 288px;
+}
+.list .text{
+    margin: 0 20px;
+}
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.footer .contain{
+    margin: 48px 0;
+}
+.footer p{
+    font-size:16px;
+    line-height:1.5
+} */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300ita‌​lic,400italic,500,500italic,700,700italic,900italic,900);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+TC);
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.profile-header,.profile,.education,.exp,.big-contain{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+.profile-header h1{
+    text-align: left;
+    font-family: 'Roboto';
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 80px;
+    border-bottom: 2px solid #000000;
+    line-height: 1.06;
+}
+.profile-header img{
+    margin: 50px 0;
+}
+.title{
+    border-bottom: 1px solid #000000;
+}
+.title h2{
+    font-family:'Noto Sans TC';
+    font-size: 32px;
+    padding-bottom: 10px;
+}
+.title span{
+    font-size: 24px;
+    font-family: 'Roboto';
+    padding-left: 16px;
+    color:#A00404;
+    vertical-align: middle
+}
+.title-white{
+    border-bottom: 1px solid #FFF;
+}
+.title-white h2{
+    font-family:'Noto Sans TC';
+    font-size: 32px;
+    padding-bottom: 10px;
+    color:#FFF;
+}
+.title-white span{
+    font-size: 24px;
+    font-family: 'Roboto';
+    padding-left: 16px;
+    color:#FFF;
+    vertical-align: middle
+}
+.education{
+    margin-top: 80px;
+    padding-bottom: 72px;
+}
+.profile p,.education p{
+    font-family:'Noto Sans TC';
+    margin-top: 24px;
+    font-size: 24px;
+    line-height: 1.5;
+}
+.skill,.contact{
+    background: #415165;
+}
+.skill .contain{
+    text-align: center;
+    max-width: 996px;
+    margin: 0 auto;
+    padding-top: 30px;
+}
+.skill ul{
+    max-width: 220px;
+    margin: 0 auto;
+    padding-top: 37px;
+    padding-bottom: 36px;
+}
+.skill li{
+    font-family: 'Roboto';
+    font-size: 24px;
+    text-align-last: left;
+    border-left: 1px solid #FFF;
+    padding: 8px 0 8px 24px;
+    color:#FFF;
+    font-weight: 100;
+}
+.skill .ch{
+    font-family: PingFangTC-Light, sans-serif;
+}
+.exp{
+    padding: 72px 0;
+}
+.exp ul{
+    margin-top: 16px;
+    margin-left: 24px;
+}
+.exp li{
+    font-family:'Noto Sans TC';
+    text-align-last: left;
+    border-left: 1px solid #96A9C4;
+    padding: 12px 0 12px 24px;
+}
+.exp li h3{
+    font-size: 24px;
+    line-height: 36px;
+}
+.exp li p{
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 642px;
+}
+.exp li img{
+    width: 90px;
+    height: 90px;
+    padding: 8px 0;
+}
+.contact .big-contain{
+    text-align: center;
+    padding: 24px 0;
+}
+.contact ul{
+    margin-top: 24px;
+}
+.contact li{
+    font-family: 'Roboto';
+    font-size: 24px;
+    color:#FFF;
+    font-weight: 100;
+    line-height: 36px;
+    padding: 8px 0;
+}
+.contact li img{
+    margin: 0 12px;
+}
