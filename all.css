@@ -93,7 +93,7 @@ table {
 img{
     max-width: 100%;
     height: auto;
-  }
+}
   
 /* 全域 border box */
   
@@ -101,13 +101,20 @@ img{
     box-sizing: border-box;
 }
 
-.profile-header,.profile,.education,.exp,.big-contain{
+body{
+    font-size: 24px;
+    line-height: 1.5;
+    font-family: 'Roboto';
+}
+.container{
     max-width: 1200px;
     margin: 0 auto;
 }
+.bg-blue{
+    background: #415165;
+}
 .profile-header h1{
     text-align: left;
-    font-family: 'Roboto';
     letter-spacing: 0px;
     color: #000000;
     opacity: 1;
@@ -116,54 +123,40 @@ img{
     line-height: 1.06;
 }
 .profile-header img{
-    margin: 50px 0;
+    margin-top: 51px;
+    margin-bottom: 48px;
 }
 .title{
     border-bottom: 1px solid #000000;
-}
-.title h2{
     font-family:'Noto Sans TC';
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
 }
-.title span{
-    font-size: 24px;
-    font-family: 'Roboto';
+.title .span-normal{
     padding-left: 16px;
     color:#A00404;
-    vertical-align: middle
 }
 .title-white{
+    text-align: center;
     border-bottom: 1px solid #FFF;
-}
-.title-white h2{
     font-family:'Noto Sans TC';
     font-size: 32px;
-    padding-bottom: 10px;
+    padding-bottom: 8px;
     color:#FFF;
 }
-.title-white span{
-    font-size: 24px;
-    font-family: 'Roboto';
+.title-white .span-w{
     padding-left: 16px;
     color:#FFF;
-    vertical-align: middle
 }
 .education{
     margin-top: 80px;
     padding-bottom: 72px;
 }
-.profile p,.education p{
+.profile ul,.education ul{
     font-family:'Noto Sans TC';
     margin-top: 24px;
-    font-size: 24px;
-    line-height: 1.5;
-}
-.skill,.contact{
-    background: #415165;
 }
 .skill .contain{
-    text-align: center;
     max-width: 996px;
     margin: 0 auto;
     padding-top: 30px;
@@ -175,9 +168,7 @@ img{
     padding-bottom: 36px;
 }
 .skill li{
-    font-family: 'Roboto';
-    font-size: 24px;
-    text-align-last: left;
+    text-align: left;
     border-left: 1px solid #FFF;
     padding: 8px 0 8px 24px;
     color:#FFF;
@@ -195,12 +186,11 @@ img{
 }
 .exp li{
     font-family:'Noto Sans TC';
-    text-align-last: left;
+    text-align: left;
     border-left: 1px solid #96A9C4;
     padding: 12px 0 12px 24px;
 }
 .exp li h3{
-    font-size: 24px;
     line-height: 36px;
 }
 .exp li p{
@@ -211,9 +201,9 @@ img{
 .exp li img{
     width: 90px;
     height: 90px;
-    padding: 8px 0;
+    margin: 8px 0;
 }
-.contact .big-contain{
+.contact .contain{
     text-align: center;
     padding: 24px 0;
 }
@@ -221,13 +211,20 @@ img{
     margin-top: 24px;
 }
 .contact li{
-    font-family: 'Roboto';
-    font-size: 24px;
     color:#FFF;
     font-weight: 100;
     line-height: 36px;
     padding: 8px 0;
 }
+.contact a{
+    color:#FFF;
+    text-decoration: none;
+}
 .contact li img{
     margin: 0 12px;
+}
+.contact .app{
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
