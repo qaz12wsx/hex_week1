@@ -90,9 +90,15 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-img {
+img{
     max-width: 100%;
     height: auto;
+  }
+  
+/* 全域 border box */
+  
+*,*::before,*::after{
+    box-sizing: border-box;
 }
 
 .profile-header,.profile,.education,.exp,.big-contain{
